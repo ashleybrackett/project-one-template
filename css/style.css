@@ -2,12 +2,32 @@ body {background:rgba(221, 115, 44, 0.15);}/* opacity orange */
 head {font-family: superclarendon, serif; 
 	font-weight: 300; 
 	font-style: normal;}
+h1 {font-family: superclarendon, serif; 
+	font-weight: 400; 
+	font-style: normal;
+	font-size: 60px;
+}
+h2 {font-family: superclarendon, serif; 
+	font-weight: 300; 
+	font-style: normal;
+	font-size: 37px;
+	}
+
+p {font-family: gill-sans-nova, sans-serif; 
+	font-weight:200; 
+	font-style: normal;
+	font-size: 21px;
+
+}
 
 a {
 	text-decoration: none;
 }
 .active {text-decoration: underline;}
 nav {
+	font-family: superclarendon, serif; 
+	font-weight: 300; 
+	font-style: normal;
 	text-align: center;
 	background: rgba(247, 239, 235, 1);
 		margin: 20px 20px;
