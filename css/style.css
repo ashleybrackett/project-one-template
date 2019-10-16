@@ -18,18 +18,34 @@ h2 {font-family: superclarendon, serif;
 	font-color: rgb(127, 67, 23);
 	}
 
-p {font-family: gill-sans-nova, sans-serif; 
+h3 {
+	font-family: gill-sans-nova, sans-serif; 
 	font-weight: 600; 
 	font-style: normal;
 	font-size: 21px;
 	font-color: rgba(127, 67, 23, 1);
+}
 
+h4 {
+	font-family: gill-sans-nova, sans-serif; 
+	font-weight: 200; 
+	font-style: italic;
+	font-size: 21px;
+	font-color: rgba(127, 67, 23, 1);
+}
+
+p {font-family: gill-sans-nova, sans-serif; 
+	font-weight: 300; 
+	font-style: normal;
+	font-size: 21px;
+	font-color: rgba(127, 67, 23, 1);
 }
 
 a {
 	text-decoration: none;
 }
-.active {text-decoration: underline;}
+.active {text-decoration: underline;
+font-color: rgb(127, 67, 23);}
 nav {
 	font-family: superclarendon, serif; 
 	font-weight: 300; 
@@ -56,8 +72,13 @@ section {
 	grid-row-gap: 1em;
 }
 
+.shadow {
+	-webkit-box-shadow: -66px -40px 0px 0px rgba(221,115,44,1);
+	-moz-box-shadow: -66px -40px 0px 0px rgba(221,115,44,1);
+	box-shadow: -66px -40px 0px 0px rgba(221,115,44,1);
+}
 
-/*column first try*/
+/*column first try
 .first-column {
 	width: 50%;
 	float: left;
