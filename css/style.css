@@ -3,6 +3,7 @@ head {font-family: superclarendon, serif;
 	font-weight: 300; 
 	font-style: normal;
 	font-color: rgb(127, 67, 23);}/* brown text color */
+
 h1 {font-family: superclarendon, serif; 
 	font-weight: 400; 
 	font-style: normal;
@@ -11,7 +12,10 @@ h1 {font-family: superclarendon, serif;
 	padding: 20px;
 	margin-left: 40px;
 }
-h2 {font-family: superclarendon, serif; 
+h2 {writing-mode: vertical-lr; /* vertal text tags */
+	text-orientation: mixed; /* vertal text tags */
+	transform: rotate(180deg);
+	font-family: superclarendon, serif; 
 	font-weight: 300; 
 	font-style: normal;
 	font-size: 37px;
@@ -44,6 +48,14 @@ p {font-family: gill-sans-nova, sans-serif;
 a {
 	text-decoration: none;
 }
+
+.vertical {
+	text-orientation: mixed;
+	text-orientation: upright;
+	text-orientation: sideways-left;
+	text-orientation: sideways;
+	text-orientation: use-glyph-orientation;
+}
 .active {text-decoration: underline;
 font-color: rgb(127, 67, 23);}
 nav {
@@ -53,7 +65,7 @@ nav {
 	font-color:rgb(127, 67, 23);
 	text-align: center;
 	background: rgba(247, 239, 235, 1);
-		margin: 20px 20px;
+		margin: 20px 0;
 		padding: 40px;
 }
 nav ul {
@@ -67,11 +79,34 @@ nav li {
 section {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	margin: 20px 20px;
+	margin: 20px 40px;
 	grid-column-gap: 1em;
 	grid-row-gap: 1em;
 }
 
+section h1 { grid-column: 1 / -1; }
+
+section div:nth-child(even) {
+	margin-left: 60px;
+}
+section div:nth-child(even) img{
+-webkit-box-shadow: -66px -40px 0px 0px rgba(221,115,44,1);
+-moz-box-shadow: -66px -40px 0px 0px rgba(221,115,44,1);
+box-shadow: -66px -40px 0px 0px rgba(221,115,44,1);
+}
+section div:nth-child(even) h2{
+	margin-left: -40px;
+
+	}
+section div:nth-child(odd) img{
+	-webkit-box-shadow: 50px -40px 0px 0px rgba(221,115,44,1);
+-moz-box-shadow: 50px -40px 0px 0px rgba(221,115,44,1);
+box-shadow: 50px -40px 0px 0px rgba(221,115,44,1);
+}
+section div:nth-child(odd) h2{
+	margin-right: 0;
+
+	}
 .shadow {
 	-webkit-box-shadow: -66px -40px 0px 0px rgba(221,115,44,1);
 	-moz-box-shadow: -66px -40px 0px 0px rgba(221,115,44,1);
